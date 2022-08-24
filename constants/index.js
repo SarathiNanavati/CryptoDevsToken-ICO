@@ -1,4 +1,4 @@
-export const CRYPTODEV_TOKEN_CONTRACT_ADDRESS = "0xA99225b457023f24A8E2931ae37C51066641295a";
+export const CRYPTODEV_TOKEN_CONTRACT_ADDRESS = "0x937Ef1313b513871CE60124c3b45E1168e279CdD";
 export const CRYPTODEV_TOKEN_CONTRACT_ABI = [
   {
     inputs: [
@@ -83,45 +83,6 @@ export const CRYPTODEV_TOKEN_CONTRACT_ABI = [
   {
     stateMutability: "payable",
     type: "fallback",
-  },
-  {
-    inputs: [],
-    name: "MAX_TOTAL_SUPPLY",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "TOKEN_PER_NFT",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "TOKEN_PRICE",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
   },
   {
     inputs: [
@@ -259,6 +220,19 @@ export const CRYPTODEV_TOKEN_CONTRACT_ABI = [
     type: "function",
   },
   {
+    inputs: [],
+    name: "maxTotalSupply",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
     inputs: [
       {
         internalType: "uint256",
@@ -331,6 +305,32 @@ export const CRYPTODEV_TOKEN_CONTRACT_ABI = [
         internalType: "bool",
         name: "",
         type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "tokenPrice",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "tokensPerNFT",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
       },
     ],
     stateMutability: "view",
